@@ -36,7 +36,7 @@ submitBtn.addEventListener('click', async () => {
     formData.append("file", file);
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/parse-resume/', { 
+        const response = await fetch('https://ai-resume-parser-ng12.onrender.com/parse-resume/', { 
             method: 'POST', 
             body: formData 
         });
